@@ -10,7 +10,7 @@
 
 Console.WriteLine("Привет! Напиши что-нибудь, а я отсортирую!");
 
-Console.Write("Итак, первая строка:");
+Console.Write("Итак, первая строка: ");
 string? m1 = Console.ReadLine()!;
 Console.Write("Вторая: ");
 string? m2 = Console.ReadLine()!;
@@ -42,12 +42,11 @@ void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"{array[i]} ");
+        Console.WriteLine($"{array[i]} ");
     }
-    Console.WriteLine();
 
 }
 
 ArrayСounter(arr1, arr2);
-Console.Write("Результат сортировки: ");
+Console.WriteLine("Результат сортировки: ");
 PrintArray(arr2);
