@@ -8,10 +8,17 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
+Console.WriteLine("Привет! Напиши что-нибудь, а я отсортирую!");
+
+Console.Write("Итак, первая строка:");
 string? m1 = Console.ReadLine()!;
+Console.Write("Вторая: ");
 string? m2 = Console.ReadLine()!;
+Console.Write("Третья: ");
 string? m3 = Console.ReadLine()!;
+Console.Write("Четвертая: ");
 string? m4 = Console.ReadLine()!;
+Console.Write("И пятая: ");
 string? m5 = Console.ReadLine()!;
 
 string[] arr1 = new string[5] {m1, m2, m3, m4, m5};
@@ -42,4 +49,5 @@ void PrintArray(string[] array)
 }
 
 ArrayСounter(arr1, arr2);
+Console.Write("Результат сортировки: ");
 PrintArray(arr2);
